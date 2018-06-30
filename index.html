@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaCourseSite.io</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header id="header" class="header ">
+        <div class="container">
+            <div class="row">
+                <div class="col s1 m1 l1 left">
+                    <!-- <img src="img/logo2.png" id="logo"> -->
+                </div>
+                <div class="col s1 m1 l1 right">
+                    <ul>
+                        <li class="submenu">
+                            <i class="small material-icons grey-text text-lighten-5">add_shopping_cart</i>
+                            <!--<img src="img/cart.png" id="img-cart"> -->
+                            <div id="shopping-cart">
+                                <table id="cart-content" class="highlight">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Image
+                                            </th>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Price
+                                            </th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="clear-cart" class="waves-effect waves-purple btn-small btn-color white-text z-depth-4">Clear Cart</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="hero-content">
+                        <h2>Learn Something Today</h2>
+                        <p>Special Offer, any course $15</p>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">What Do You Want To Learn?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 l4 icon">
+                    <i class="material-icons medium white-text">trending_up</i>
+                    <p>20,000 online courses
+                        <br> Learn new skills</p>
+                </div>
+                <div class="col s12 m4 l4 icon">
+                    <i class="material-icons medium white-text">account_circle</i>
+                    <p>Expert Instructors
+                        <br> Learn with different teach styles</p>
+                </div>
+                <div class="col s12 m4 l4 icon">
+                    <i class="material-icons medium white-text">update</i>
+                    <p>Lifetime access
+                        <br> learn at your own pace</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CARDS COURSES FIRST ROW-->
+    <div id="courses-list" class="container">
+        <h1 id="heading" class="heading">Online Courses</h1>
+        <div class="row">
+            <div class="col s12 m4 l4 xl4 ">
+                <div class="card large hoverable">
+                    <div class="card-image">
+                        <img src="img/course1.jpg" class="course-image">
+
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title yellow-text text-darken-4">HTML5, CSS3, JavaScript for beginners</h4>
+                        <p>Juan Pedro</p>
+                        <img src="img/stars.png">
+                        <p class="price span">$200
+                            <span class="col s4 m4 l4 ">$15</span>
+                        </p>
+                    </div>
+                    <a href="#" onclick="M.toast({html: 'Course added!', classes: 'toast-style'})" class="input add-to-cart waves-effect waves-teal btn white-text btn-color z-depth-3"
+                        data-id="1">Add to Cart</a>
+                </div>
+            </div>
+            <!--.card-->
+
+            <!--.card-->
+            <div class="col s12 m4 l4 xl4 ">
+                <div class="card large hoverable">
+                    <div class="card-image">
+                        <img src="img/course2.jpg" class="course-image">
+
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title yellow-text text-darken-4">Cooking Course</h4>
+                        <p>Jame Oliver</p>
+                        <img src="img/stars.png">
+                        <p class="price span">$200
+                            <span class="col s12 m4 l4 ">$15</span>
+                        </p>
+                    </div>
+                    <a href="#" onclick="M.toast({html: 'Course added!', classes: 'toast-style'})" class="input add-to-cart waves-effect waves-teal btn white-text btn-color z-depth-3"
+                        data-id="1">Add to Cart</a>
+                </div>
+            </div>
+            <!--.card-->
+            <div class="col s12 m4 l4 xl4 ">
+                <div class="card large hoverable">
+                    <div class="card-image">
+                        <img src="img/course3.jpg" class="course-image">
+
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title yellow-text text-darken-4">Guitar for beginners</h4>
+                        <p>George Harrison, Johnny Ramone, Carlos Santana and Eric Clapton</p>
+                        <img src="img/stars.png">
+                        <p class="price span">$200
+                            <span class="col s12 m4 l4 ">$15</span>
+                        </p>
+                    </div>
+                    <a href="#" onclick="M.toast({html: 'Course added!', classes: 'toast-style'})" class="input add-to-cart waves-effect waves-light btn white-text btn-color z-depth-3"
+                        data-id="1">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer btn-color">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6 ">
+                    <div class="white-text left-align">
+                        <ul>
+                            <li>
+                                <a class="white-text " href="#">For Business</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#">Become an Instructor</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#">Mobile Applications</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#">Support</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#">Help</a>
+                            </li>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6 ">
+                    <div class="white-text right-align">
+                        <ul>
+                            <li>
+                                <a class="white-text" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#">Work with us</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#">Blog</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Nenad Spasic
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
